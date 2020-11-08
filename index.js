@@ -8,7 +8,7 @@ class textToImg {
         // font&pattern
         if (!configs.font) configs.font = {};
         this.font = {
-            font: configs.font.font || "24px 宋体",
+            font: configs.font.font || "24px simsun", // 宋体
             fontHeight: configs.font.fontHeight || 24,
             fontMaxWidth: configs.font.fontMaxWidth || 24,
             fillStyle: configs.font.fillStyle || "black",
@@ -16,7 +16,7 @@ class textToImg {
         // size
         if (!configs.size) configs.size = {};
         this.size = {
-            maxCharsPerLine: configs.size.maxCharsPerLine || 50,
+            maxCharsPerLine: configs.size.maxCharsPerLine || 70,
             paddingX: configs.size.paddingX || this.font.fontMaxWidth,
             paddingY: configs.size.paddingY || this.font.fontHeight,
         }
